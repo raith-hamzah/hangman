@@ -91,7 +91,11 @@ function App() {
               <div className="grid">
                 <div className="hangman-image">
                   <h2>Tries left: {triesLeft}</h2>
-                  <img className="hangman-image" src={hangmanUrls[triesLeft]} />
+                  <img
+                    alt={`${triesLeft} tries left.`}
+                    className="hangman-image"
+                    src={hangmanUrls[triesLeft]}
+                  />
                 </div>
                 <div className="hangman-tries">
                   <h1>
