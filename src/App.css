@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.wrapper {
+  margin-top: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wordChoice {
+  margin-top: 32px;
+  padding: 8px;
+  font-size: 2.441em;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-weight: 200;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wordChoice:focus {
+  outline: 3px solid green;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.keyboard-button {
+  background: green;
+  border: none;
+  padding: 8px;
+  min-width: 48px;
+  font-size: 2rem;
+  cursor: pointer;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.keyboard-button:hover {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard-button:focus {
+  outline: none;
+}
+
+.keyboard-button__guessed {
+  background-color: maroon;
+}
+
+.hangman-image {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: green;
+  color: white;
+  padding: 8px;
 }
